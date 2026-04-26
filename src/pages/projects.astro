@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { projects } from "../config";
+---
+
+<Layout title="Projects">
+  <section class="py-8 md:py-12">
+    <h1
+      class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100"
+    >
+      Projects
+    </h1>
+    <p class="mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+      A selection of things I've built. Most of these are running on
+      subdomains of this site.
+    </p>
+
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {projects.map((p) => <ProjectCard project={p} />)}
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,33 @@
+---
+import { site } from "../config";
+const year = new Date().getFullYear();
+---
+
+<footer
+  class="mt-24 border-t border-slate-200/60 dark:border-slate-800/60"
+>
+  <div
+    class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-6 py-8 text-sm text-slate-500 md:flex-row dark:text-slate-400"
+  >
+    <p>&copy; {year} {site.name}. All rights reserved.</p>
+    <div class="flex items-center gap-4">
+      <a
+        href={`mailto:${site.email}`}
+        class="hover:text-indigo-600 dark:hover:text-indigo-400"
+        >Email</a
+      >
+      <a
+        href={site.social.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-indigo-600 dark:hover:text-indigo-400">GitHub</a
+      >
+      <a
+        href={site.social.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-indigo-600 dark:hover:text-indigo-400">LinkedIn</a
+      >
+    </div>
+  </div>
+</footer>

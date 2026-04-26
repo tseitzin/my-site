@@ -1,0 +1,74 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import { site, projects } from "../config";
+
+const featured = projects.slice(0, 3);
+---
+
+<Layout>
+  <section class="py-12 md:py-20">
+    <p
+      class="mb-4 text-sm font-medium tracking-wide text-indigo-600 uppercase dark:text-indigo-400"
+    >
+      Hi, I'm {site.shortName}
+    </p>
+    <h1
+      class="text-4xl leading-tight font-bold tracking-tight text-slate-900 sm:text-5xl md:text-6xl dark:text-slate-100"
+    >
+      {site.tagline}
+    </h1>
+    <p
+      class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-400"
+    >
+      Director of Software Engineering with 20+ years leading globally
+      distributed teams across SaaS, insurance, enterprise, and federal
+      sectors. This site is a small home for my work and the side projects
+      I run on subdomains.
+    </p>
+    <div class="mt-8 flex flex-wrap items-center gap-3">
+      <a
+        href="/projects"
+        class="inline-flex items-center gap-2 rounded-lg bg-indigo-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-indigo-500"
+      >
+        View projects
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          ><line x1="5" y1="12" x2="19" y2="12"></line><polyline
+            points="12 5 19 12 12 19"></polyline></svg
+        >
+      </a>
+      <a
+        href="/contact"
+        class="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-5 py-2.5 text-sm font-semibold text-slate-700 transition-colors hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:border-slate-600 dark:hover:bg-slate-900"
+      >
+        Get in touch
+      </a>
+    </div>
+  </section>
+
+  <section class="py-12">
+    <div class="mb-8 flex items-end justify-between">
+      <h2 class="text-2xl font-bold tracking-tight md:text-3xl">
+        Featured work
+      </h2>
+      <a
+        href="/projects"
+        class="text-sm font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400"
+      >
+        See all →
+      </a>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {featured.map((p) => <ProjectCard project={p} />)}
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,102 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { site } from "../config";
+---
+
+<Layout title="About">
+  <section class="py-8 md:py-12">
+    <h1
+      class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100"
+    >
+      About
+    </h1>
+    <div
+      class="mt-8 max-w-3xl space-y-6 text-lg leading-relaxed text-slate-700 dark:text-slate-300"
+    >
+      <p>
+        Hi — I'm {site.name}. I've spent over 30 years in software, after
+        six years in the U.S. Navy, and along the way I've grown from
+        engineer to engineering leader. Today I'm Director of Engineering
+        at <a
+          href="https://www.patriotsoftware.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-indigo-600 underline-offset-4 hover:underline dark:text-indigo-400"
+          >Patriot Software</a
+        >, where I've been for over four years leading a nationally
+        distributed organization of 60+ engineers and QA professionals
+        building SaaS HR, Payroll, Time, and Accounting platforms.
+      </p>
+      <p>
+        The work I find most rewarding is the intersection of three things:
+        developing strong engineering leaders, modernizing platforms onto
+        cloud-native architectures, and embedding AI deeply into the SDLC
+        so teams can ship more, faster, and with less toil. Earlier in my
+        career I led teams at Oracle, Liberty Mutual, Bose, and Mutual
+        Benefit Group, with consulting stops in between, and I started out
+        building FAA weather systems at Harris Corporation. I hold a B.S.
+        in Computer Science from the University of Central Florida.
+      </p>
+      <p>
+        Outside of work, life is centered on family and the outdoors. I
+        live in Harrisburg, PA with my wife Geneva — we've been married
+        for 36 years. We have two grown kids and three grandkids who, I'm
+        very lucky to say, live close enough that we get to spend a lot of
+        time together. They're honestly my favorite people. When Geneva
+        and I get a free weekend, you'll usually find us out camping or on
+        a trail somewhere.
+      </p>
+      <p>
+        I'm also genuinely a tech and learning addict — most of my
+        non-family free time goes into side projects and digging into
+        whatever the AI world is doing this month. This site is the home
+        for some of those projects (running on subdomains) and a place to
+        share a bit about who I am. Take a look at the{" "}
+        <a
+          href="/projects"
+          class="text-indigo-600 underline-offset-4 hover:underline dark:text-indigo-400"
+          >projects page</a
+        >, browse my{" "}
+        <a
+          href="/resume"
+          class="text-indigo-600 underline-offset-4 hover:underline dark:text-indigo-400"
+          >resume</a
+        >, or drop me a note via the{" "}
+        <a
+          href="/contact"
+          class="text-indigo-600 underline-offset-4 hover:underline dark:text-indigo-400"
+          >contact page</a
+        >.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-6 sm:grid-cols-2">
+      <div
+        class="rounded-xl border border-slate-200 p-6 dark:border-slate-800"
+      >
+        <h2 class="text-sm font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400">
+          What I focus on
+        </h2>
+        <ul class="mt-3 space-y-1.5 text-slate-700 dark:text-slate-300">
+          <li>Scaling and developing engineering leaders</li>
+          <li>Cloud modernization (AWS, Azure, OCI) and microservices</li>
+          <li>Embedding AI/LLM tooling into the SDLC</li>
+          <li>Agile, CI/CD, and delivery excellence</li>
+        </ul>
+      </div>
+      <div
+        class="rounded-xl border border-slate-200 p-6 dark:border-slate-800"
+      >
+        <h2 class="text-sm font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400">
+          Off the clock
+        </h2>
+        <ul class="mt-3 space-y-1.5 text-slate-700 dark:text-slate-300">
+          <li>Time with Geneva, our kids, and our grandkids</li>
+          <li>Camping and hiking</li>
+          <li>Side projects and tinkering with AI tools</li>
+          <li>U.S. Navy veteran</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</Layout>

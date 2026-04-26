@@ -1,0 +1,84 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { site } from "../config";
+---
+
+<Layout title="Contact">
+  <section class="py-8 md:py-12">
+    <h1
+      class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100"
+    >
+      Contact
+    </h1>
+    <p class="mt-4 max-w-2xl text-lg text-slate-600 dark:text-slate-400">
+      The fastest way to reach me is email. I usually reply within a day or
+      two.
+    </p>
+
+    <div class="mt-10 grid gap-4 sm:grid-cols-2">
+      <a
+        href={`mailto:${site.email}`}
+        class="group flex items-center justify-between rounded-xl border border-slate-200 p-6 transition-all hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-md dark:border-slate-800 dark:hover:border-indigo-700"
+      >
+        <div>
+          <p
+            class="text-sm font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400"
+          >
+            Email
+          </p>
+          <p class="mt-1 text-slate-900 dark:text-slate-100">
+            {site.email}
+          </p>
+        </div>
+        <span
+          class="text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400"
+          >→</span
+        >
+      </a>
+
+      <a
+        href={site.social.linkedin}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group flex items-center justify-between rounded-xl border border-slate-200 p-6 transition-all hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-md dark:border-slate-800 dark:hover:border-indigo-700"
+      >
+        <div>
+          <p
+            class="text-sm font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400"
+          >
+            LinkedIn
+          </p>
+          <p class="mt-1 text-slate-900 dark:text-slate-100">
+            Connect with me
+          </p>
+        </div>
+        <span
+          class="text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400"
+          >↗</span
+        >
+      </a>
+
+      <a
+        href={site.social.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group flex items-center justify-between rounded-xl border border-slate-200 p-6 transition-all hover:-translate-y-0.5 hover:border-indigo-300 hover:shadow-md dark:border-slate-800 dark:hover:border-indigo-700"
+      >
+        <div>
+          <p
+            class="text-sm font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400"
+          >
+            GitHub
+          </p>
+          <p class="mt-1 text-slate-900 dark:text-slate-100">
+            See my code
+          </p>
+        </div>
+        <span
+          class="text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400"
+          >↗</span
+        >
+      </a>
+    </div>
+  </section>
+</Layout>

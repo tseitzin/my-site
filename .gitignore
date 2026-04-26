@@ -1,0 +1,44 @@
+# build output
+dist/
+.output/
+
+# generated types
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# environment variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# Cloudflare Pages / Wrangler
+.wrangler/
+.dev.vars
+
+# test / coverage output
+coverage/
+.nyc_output/
+
+# editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code local state
+.claude/
+
+# OS-specific files
+.DS_Store
+Thumbs.db

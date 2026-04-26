@@ -1,0 +1,368 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { site } from "../config";
+
+const summary = `Strategic, growth-driven Director of Software Engineering with 20+ years leading high-performing, globally distributed teams across SaaS, insurance, enterprise, and federal sectors. Proven record of scaling teams, modernizing mission-critical platforms, and aligning technology strategy with business outcomes. Expert in cloud architecture (AWS, Azure, OCI), microservices, and enterprise AI enablement — embedding LLM-powered tooling into SDLC workflows, delivery management, and engineering productivity at scale.`;
+
+const competencies = [
+  {
+    group: "Organizational Leadership & Growth",
+    items: [
+      "Org Design",
+      "Talent Development",
+      "Executive Collaboration",
+      "Cross-Functional Strategy",
+    ],
+  },
+  {
+    group: "Delivery Excellence",
+    items: [
+      "Agile Transformation",
+      "CI/CD",
+      "DevOps",
+      "Engineering KPIs",
+      "Continuous Improvement",
+    ],
+  },
+  {
+    group: "Technology Strategy",
+    items: [
+      "Cloud Modernization",
+      "Microservices",
+      "SaaS Architecture",
+      "Platform Scalability",
+    ],
+  },
+  {
+    group: "AI & Intelligent Automation",
+    items: [
+      "Enterprise LLM Integration",
+      "OpenAI API Adoption",
+      "AI-Assisted SDLC Automation",
+      "GitHub Copilot",
+      "Claude",
+      "ChatGPT",
+      "Cline",
+      "Workflow Automation",
+      "Developer Productivity Acceleration",
+    ],
+  },
+  {
+    group: "Business Impact",
+    items: [
+      "KPI Definition",
+      "Budget Oversight",
+      "Roadmapping",
+      "Risk & Change Management",
+    ],
+  },
+];
+
+const achievements = [
+  "Scaled global engineering org building leadership depth and structure.",
+  "Cut time-to-market 30% through Agile adoption, CI/CD modernization, and automation.",
+  "Modernized 3 major product lines to cloud-native microservices (AWS, Azure, OCI), improving scalability, reliability, and deployment velocity.",
+  "Improved deployment reliability that reduced production incidents and improved customer satisfaction.",
+  "Led enterprise-wide adoption of AI-assisted development (LLMs, Copilot, Claude) — automating test creation, bug remediation, spec generation, and backlog creation, increasing engineering velocity.",
+  "Transitioned engineering organization to a modern tooling stack (Linear, Incident.io, Omni Analytics), improving delivery visibility, incident response coordination, and cross-functional reporting.",
+];
+
+const experience = [
+  {
+    role: "Director of Software Engineering",
+    company: "Patriot Software",
+    location: "Canton, OH / Remote",
+    period: "Nov 2021 – Present",
+    bullets: [
+      "Lead a nationally distributed organization of 60+ Software Engineers and QA professionals delivering SaaS HR, Payroll, Time, and Accounting platforms.",
+      "Built leadership depth through structured manager mentorship and clear accountability models.",
+      "Collaboratively architect scalable AWS systems and guide microservices modernization.",
+      "Drove Agile implementation and CI/CD adoption, improving quality and cadence.",
+      "Developed enterprise AI adoption strategy, deploying LLM-powered tools (OpenAI APIs, Copilot, Claude, Cline, Gemini) to enhance development, technical documentation, and automate test generation, bug fixing, spec generation, story breakdown, and backlog creation.",
+      "Integrated AI workflows with Linear MCP to automatically generate and decompose user stories, accelerating project planning.",
+      "Designed internal analytics dashboards for delivery metrics and engineering productivity insights, enabling executive-level decision support.",
+      "Designed and deployed AI-powered applications leveraging OpenAI APIs and secure cloud infrastructure, applying LLM capabilities to real-world SaaS and workflow automation scenarios.",
+      "Orchestrated full transition of engineering tooling to Linear (planning), Incident.io (incident management), and Omni Analytics (data reporting), maintaining delivery momentum throughout.",
+    ],
+  },
+  {
+    role: "Software Engineering Manager",
+    company: "Mutual Benefit Group",
+    location: "Huntingdon, PA / Remote",
+    period: "2020 – 2021",
+    bullets: [
+      "Directed global .NET teams migrating core insurance systems to the Azure cloud.",
+      "Implemented Agile and CI/CD, increasing release frequency and improving production stability.",
+      "Partnered with the CIO to establish delivery and performance dashboards.",
+    ],
+  },
+  {
+    role: "Senior Project Management Consultant",
+    company: "Planet Technologies",
+    location: "Harrisburg, PA / Remote",
+    period: "2019 – 2020",
+    bullets: [
+      "Led full-stack SaaS teams delivering mission-critical cloud applications.",
+      "Transitioned project management and backlog tooling to Azure DevOps and improved planning efficiency.",
+      "Expanded Agile frameworks, ensuring consistent on-time delivery.",
+    ],
+  },
+  {
+    role: "Software Engineering Manager",
+    company: "Oracle",
+    location: "Bozeman, MT",
+    period: "2016 – 2019",
+    bullets: [
+      "Managed global SaaS teams on Oracle Cloud Infrastructure.",
+      "Led transition to microservices and CI/CD adoption, improving scalability and deployment velocity.",
+      "Implemented Test-Driven Development practices to improve code quality and predictability.",
+    ],
+  },
+  {
+    role: "Senior IT Project Manager / Scrum Master",
+    company: "Liberty Mutual Insurance",
+    location: "Portsmouth, NH",
+    period: "2015 – 2016",
+    bullets: [
+      "Spearheaded Agile transformation across multiple teams and coached Scrum Masters.",
+      "Partnered with Product Owners to define roadmap, scope, and metrics for success.",
+    ],
+  },
+  {
+    role: "Software Engineering Manager",
+    company: "Bose Corporation",
+    location: "Framingham, MA",
+    period: "2013 – 2015",
+    bullets: [
+      "Led transition to Agile methodologies, developing in-house Scrum Master and Coach training.",
+      "Oversaw R&D prototype facilities and automated software testing environments.",
+    ],
+  },
+  {
+    role: "Software Engineer → Software Program Manager",
+    company: "Harris Corporation",
+    location: "",
+    period: "2001 – 2012",
+    bullets: [
+      "Progressed from Software Engineer to Software Program Manager, overseeing a $100M FAA weather program and managing 50+ staff across engineering, finance, and operations.",
+      "Delivered complex, mission-critical weather systems deployed nationwide and internationally.",
+    ],
+  },
+];
+
+const education = [
+  {
+    school: "University of Central Florida",
+    degree: "B.S., Computer Science",
+    location: "Orlando, FL",
+  },
+];
+
+const service = [
+  {
+    branch: "United States Navy",
+    detail: "Honorable Service",
+  },
+];
+
+const skills = {
+  Cloud: ["AWS", "Azure", "Oracle Cloud Infrastructure"],
+  "Architecture & Delivery": [
+    "Microservices",
+    "SaaS",
+    "CI/CD",
+    "Agile",
+    "DevOps",
+  ],
+  Languages: ["C#", ".NET", "Python", "JavaScript", "SQL"],
+  Tooling: ["Docker", "Kubernetes", "GitHub", "Azure DevOps"],
+  AI: [
+    "OpenAI APIs",
+    "Enterprise LLM Adoption",
+    "AI-Assisted Development",
+    "GitHub Copilot",
+    "Claude",
+  ],
+};
+---
+
+<Layout title="Resume">
+  <section class="py-8 md:py-12">
+    <div class="flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <h1
+          class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl dark:text-slate-100"
+        >
+          Resume
+        </h1>
+        <p class="mt-3 text-slate-600 dark:text-slate-400">
+          {site.name} · <a
+            href={`mailto:${site.email}`}
+            class="hover:text-indigo-600 dark:hover:text-indigo-400"
+            >{site.email}</a
+          > · <a
+            href={site.social.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-indigo-600 dark:hover:text-indigo-400"
+            >LinkedIn</a
+          >
+        </p>
+      </div>
+      <a
+        href="/resume.pdf"
+        class="inline-flex items-center gap-2 rounded-lg border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition-colors hover:border-slate-400 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-200 dark:hover:border-slate-600 dark:hover:bg-slate-900"
+      >
+        Download PDF
+      </a>
+    </div>
+
+    <p class="mt-3 text-sm font-medium tracking-wide text-indigo-600 uppercase dark:text-indigo-400">
+      Engineering Executive · SaaS Transformation · Cloud &amp; AI Enablement · Agile Leadership
+    </p>
+
+    <section class="mt-10">
+      <h2
+        class="border-b border-slate-200 pb-2 text-xl font-semibold tracking-tight dark:border-slate-800"
+      >
+        Summary
+      </h2>
+      <p class="mt-4 max-w-4xl text-slate-700 dark:text-slate-300">
+        {summary}
+      </p>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="border-b border-slate-200 pb-2 text-xl font-semibold tracking-tight dark:border-slate-800"
+      >
+        Core Leadership Competencies
+      </h2>
+      <dl class="mt-6 grid gap-4 sm:grid-cols-2">
+        {
+          competencies.map((c) => (
+            <div>
+              <dt class="text-sm font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400">
+                {c.group}
+              </dt>
+              <dd class="mt-2 flex flex-wrap gap-1.5">
+                {c.items.map((item) => (
+                  <span class="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-300">
+                    {item}
+                  </span>
+                ))}
+              </dd>
+            </div>
+          ))
+        }
+      </dl>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="border-b border-slate-200 pb-2 text-xl font-semibold tracking-tight dark:border-slate-800"
+      >
+        Selected Achievements
+      </h2>
+      <ul class="mt-6 list-disc space-y-2 pl-5 text-slate-700 dark:text-slate-300">
+        {achievements.map((a) => <li>{a}</li>)}
+      </ul>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="border-b border-slate-200 pb-2 text-xl font-semibold tracking-tight dark:border-slate-800"
+      >
+        Experience
+      </h2>
+      <div class="mt-6 space-y-8">
+        {
+          experience.map((job) => (
+            <div>
+              <div class="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 class="text-lg font-semibold text-slate-900 dark:text-slate-100">
+                  {job.role}{" "}
+                  <span class="font-normal text-slate-500 dark:text-slate-400">
+                    · {job.company}
+                    {job.location && ` · ${job.location}`}
+                  </span>
+                </h3>
+                <span class="text-sm text-slate-500 dark:text-slate-400">
+                  {job.period}
+                </span>
+              </div>
+              <ul class="mt-3 list-disc space-y-1.5 pl-5 text-slate-700 dark:text-slate-300">
+                {job.bullets.map((b) => (
+                  <li>{b}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="border-b border-slate-200 pb-2 text-xl font-semibold tracking-tight dark:border-slate-800"
+      >
+        Technical Highlights
+      </h2>
+      <dl class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {
+          Object.entries(skills).map(([group, items]) => (
+            <div>
+              <dt class="text-sm font-semibold tracking-wide text-slate-500 uppercase dark:text-slate-400">
+                {group}
+              </dt>
+              <dd class="mt-2 flex flex-wrap gap-1.5">
+                {items.map((s) => (
+                  <span class="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-300">
+                    {s}
+                  </span>
+                ))}
+              </dd>
+            </div>
+          ))
+        }
+      </dl>
+    </section>
+
+    <section class="mt-12">
+      <h2
+        class="border-b border-slate-200 pb-2 text-xl font-semibold tracking-tight dark:border-slate-800"
+      >
+        Education &amp; Service
+      </h2>
+      <div class="mt-6 space-y-4">
+        {
+          education.map((e) => (
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <p class="font-medium text-slate-900 dark:text-slate-100">
+                {e.degree}{" "}
+                <span class="font-normal text-slate-500 dark:text-slate-400">
+                  · {e.school}
+                </span>
+              </p>
+              <span class="text-sm text-slate-500 dark:text-slate-400">
+                {e.location}
+              </span>
+            </div>
+          ))
+        }
+        {
+          service.map((s) => (
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <p class="font-medium text-slate-900 dark:text-slate-100">
+                {s.branch}{" "}
+                <span class="font-normal text-slate-500 dark:text-slate-400">
+                  · {s.detail}
+                </span>
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+  </section>
+</Layout>
